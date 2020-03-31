@@ -134,6 +134,9 @@ on boot
     enable vendor.dataqti
     enable vendor.dataadpl
 
+    # limit discard size to 128MB in order to avoid long IO latency
+    write /sys/block/sda/queue/discard_max_bytes 134217728
+
 on post-fs-data
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
