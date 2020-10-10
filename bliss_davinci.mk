@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
-BLISS_BUILD_VARIANT := vanilla
+BLISS_BUILD_VARIANT := gapps
 
 PRODUCT_NAME := bliss_davinci
 PRODUCT_DEVICE := davinci
