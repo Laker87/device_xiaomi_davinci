@@ -1,2 +1,4 @@
+type wcnss_service, domain;
+
 allow wcnss_service vendor_data_file:dir create_dir_perms;
 allow wcnss_service vendor_data_file:file create_file_perms;

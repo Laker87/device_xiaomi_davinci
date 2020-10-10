@@ -1,1 +1,2 @@
+type adsprpcd, domain;
 r_dir_file(adsprpcd sysfs_graphics)
