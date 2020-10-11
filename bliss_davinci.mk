@@ -22,11 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common StatixOS stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
+BLISS_BUILD_VARIANT := vanilla
 
-PRODUCT_NAME := statix_davinci
+PRODUCT_NAME := bliss_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
