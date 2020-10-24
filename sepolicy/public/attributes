@@ -2,10 +2,7 @@ hal_attribute(motor)
 
 hal_attribute(touchfeature)
 
-attribute vendor_persist_type;
 attribute hal_perf_client;
 attribute hal_perf;
-attribute hal_lineage_fod_server;
-attribute hal_lineage_fod;
 
 
