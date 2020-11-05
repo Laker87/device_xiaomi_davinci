@@ -19,13 +19,11 @@ package org.lineageos.settings.thermal;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.FileUtils;
 import android.os.UserHandle;
-import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import java.io.IOException;
+import org.lineageos.settings.utils.FileUtils;
 
 public final class ThermalUtils {
     private static final String TAG = "ThermalUtils";
@@ -158,10 +156,6 @@ public final class ThermalUtils {
             }
         }
 
-        try {
-            FileUtils.stringToFile(THERMAL_SCONFIG, state);
-        } catch (IOException e) {
-            Log.e(TAG, "Failed to write to " + THERMAL_SCONFIG, e);
-        }
+        FileUtils.writeLine(THERMAL_SCONFIG, state);
     }
 }
