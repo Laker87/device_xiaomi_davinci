@@ -114,6 +114,7 @@
         <device name="SND_DEVICE_OUT_HEADPHONES" acdb_id="10012"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_HIFI_FILTER" acdb_id="10026"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_44_1" acdb_id="10012"/>
+        <device name="SND_DEVICE_OUT_BT_A2DP" acdb_id="10012"/>
         <device name="SND_DEVICE_OUT_USB_HEADSET" acdb_id="10012"/>
         <device name="SND_DEVICE_OUT_USB_HEADPHONES" acdb_id="10012"/>
     </acdb_ids>
