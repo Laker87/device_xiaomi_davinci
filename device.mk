@@ -163,6 +163,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
 
+# Gapps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
