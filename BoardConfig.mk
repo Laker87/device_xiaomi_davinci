@@ -187,6 +187,7 @@ VENDOR_SECURITY_PATCH := 2020-09-05
 
 # Selinux
 TARGET_SEPOLICY_DIR := msmsteppe
+SELINUX_IGNORE_NEVERALLOWS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
