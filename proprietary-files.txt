@@ -712,12 +712,13 @@ vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
 
 # RIL
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephonyservice.xml
-system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephonyservice.xml
+product/framework/qcrilhook.jar
+system_ext/framework/qti-telephony-common.jar|98be39c37e0bcbbbf6180bd25bca3f5c9a472362
+product/framework/QtiTelephonyServicelibrary.jar
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/adpl
 vendor/bin/hw/qcrild
 vendor/bin/netmgrd
