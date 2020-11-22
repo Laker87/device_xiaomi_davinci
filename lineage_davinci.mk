@@ -24,6 +24,10 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# FOD
+TARGET_HAS_FOD =: true
+EXTRA_FOD_ANIMATIONS := true
+
 PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
