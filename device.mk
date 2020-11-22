@@ -313,6 +313,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/system_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/system_privapp-permissions-qti.xml \
 
+# Remove packages
+
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
