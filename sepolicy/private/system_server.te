@@ -1,1 +1,6 @@
 get_prop(system_server, vendor_persist_camera_prop)
+
+# DC Dimming
+allow system_server sysfs_dc_dim:file rw_file_perms;
+add_service(system_server, dc_dimming_service);
+
