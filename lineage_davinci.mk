@@ -25,6 +25,8 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
+EXTRA_FOD_ANIMATIONS := true
+TARGET_HAS_FOD := true
 
 PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
