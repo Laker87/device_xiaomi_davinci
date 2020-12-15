@@ -110,8 +110,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_megvii \
-	libmedia_jni_shim
+    libshim_megvii
 
 PRODUCT_PACKAGES += \
     Snap
