@@ -21,7 +21,7 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
@@ -42,13 +42,33 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
+        <service
+            android:name=".display.DcDimmingService"
+            android:permission="XiaomiDcDimmingService"></service>
 
-        <service android:name=".popupcamera.PopupCameraService"
-                 android:permission="PopupCameraService">
-        </service>
+        <service
+            android:name=".doze.DozeService"
+            android:permission="XiaomiDozeService"></service>
+
+        <service
+            android:name=".popupcamera.PopupCameraService"
+            android:permission="PopupCameraService"></service>
+
+        <activity
+            android:name=".display.DcDimmingSettingsActivity"
+            android:label="@string/dc_dimming_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/dc_dimming_summary" />
+        </activity>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
@@ -57,8 +77,12 @@
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/ambient_display_enable_summary" />
         </activity>
 
         <activity
@@ -83,13 +107,14 @@
                 android:value="-255" />
         </activity>
 
-                <activity
+        <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.battery" />
@@ -100,10 +125,10 @@
                 android:name="com.android.settings.order"
                 android:value="1" />
         </activity>
+
         <service
             android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
-        </service>
+            android:permission="ThermalService"></service>
 
     </application>
 </manifest>
