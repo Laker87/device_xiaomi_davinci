@@ -131,11 +131,8 @@ ENABLE_CONFIGSTORE := true
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
-# NFC
-TARGET_USES_NQ_NFC := true
 # MiuiCamera
 include vendor/miuicamera/common/BoardConfigVendor.mk
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
