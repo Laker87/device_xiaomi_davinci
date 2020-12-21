@@ -131,6 +131,8 @@ ENABLE_CONFIGSTORE := true
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
+# NFC
+TARGET_USES_NQ_NFC := true
 # MiuiCamera
 include vendor/miuicamera/common/BoardConfigVendor.mk
 
