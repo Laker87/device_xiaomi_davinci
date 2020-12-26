@@ -13,6 +13,9 @@
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
 /data/vendor/goodix(/.*)?                                            u:object_r:fingerprint_data_file:s0
 
+# FPS tile
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
+
 # HALs
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.davinci        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.davinci u:object_r:hal_lineage_fod_default_exec:s0

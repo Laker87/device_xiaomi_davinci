@@ -10,3 +10,6 @@ allow system_app { motor_device sysfs_graphics hall_device }:chr_file rw_file_pe
 
 allow system_app sysfs_dm:file rw_file_perms;
 
+# FPS tile
+allow system_app sysfs:file { getattr };
+
