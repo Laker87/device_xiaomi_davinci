@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.power.rc \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh \
@@ -296,7 +297,11 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power@1.3-service.sm6150-libperfmgr \
+    powerhint.json
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -360,7 +365,8 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \
