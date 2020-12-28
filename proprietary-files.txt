@@ -68,6 +68,7 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
+vendor/firmware/mono.cnt
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
