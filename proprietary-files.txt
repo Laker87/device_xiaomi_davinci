@@ -710,6 +710,9 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
+# Power-libperfmgr
+vendor/lib64/pixel-power-ext-V1-ndk_platform.so|b33a8897c626ff59707808ccbf3e2558d3a05b6e
+
 # Power-off charging daemon - from qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM-release-keys
 bin/charger:bin/charger|4b600706d503dce9cf3b41b81f9c9a618a458221
 
