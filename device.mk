@@ -302,8 +302,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sm6150-libperfmgr \
-    powerhint.json
+    android.hardware.power-service-qti
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -372,8 +371,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/google/pixel
+    hardware/xiaomi
 
 # Telephony
 PRODUCT_PACKAGES += \
