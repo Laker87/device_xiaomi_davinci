@@ -3,3 +3,4 @@ dontaudit init firmware_file:filesystem getattr;
 
 # Allow init to wrtie to sysfs_battery_supply
 allow init sysfs_battery_supply:file { setattr };
+allow init proc_sched_energy_aware:file w_file_perms;
