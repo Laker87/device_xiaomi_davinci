@@ -7,7 +7,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := Browser \
 							Jelly\
 							Etar \
-							AudioFX
+							AudioFX \
+							MatLog
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
