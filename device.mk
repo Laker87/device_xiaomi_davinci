@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
+# ANX Camera
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
