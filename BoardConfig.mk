@@ -25,9 +25,6 @@ BUILD_BROKEN_USES_NETWORK := true
 # Inherit from proprietary files
 include vendor/xiaomi/davinci/BoardConfigVendor.mk
 
-# ANXCamera
-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
