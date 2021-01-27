@@ -497,13 +497,13 @@ vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 
 # Graphics firmware
-vendor/firmware/a615_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
-vendor/firmware/a615_zap.b01|e66827f5078502024e4c2f512c50b012bff0d998
-vendor/firmware/a615_zap.b02|1724cd8c233e4887cec8b9b18f02c9cd5083238b
-vendor/firmware/a615_zap.elf|a27b1411169e594ac897b3baf3e9e3ccad33647b
-vendor/firmware/a615_zap.mdt|2a3c559d2eaa5f81685d5bd28ef0255750bf1fdd
-vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
-vendor/firmware/a630_sqe.fw|a7a91327db8043a3c9ad85f11356984bbc401026
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_sqe.fw
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -607,12 +607,12 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 # IPA
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01|43ed5cfa17357138275e41d4a486339e20b8f8bd
+vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
 vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf|4f26105e037556e5754ba0019a256b298bc551eb
-vendor/firmware/ipa_fws.mdt|ff42096c137f1dfc1db2f272521b3a9ff8300ddb
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
