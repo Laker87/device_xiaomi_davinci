@@ -20,6 +20,7 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.util.Log;
 
 import org.lineageos.settings.popupcamera.PopupCameraUtils;
@@ -34,8 +35,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
+
+        PendingResult pendingResult = goAsync();
         PopupCameraUtils.startService(context);
         ThermalUtils.startService(context);
         DcDimmingUtils.startService(context);
+        pendingResult.finish();
     }
 }
