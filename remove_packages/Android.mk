@@ -8,7 +8,8 @@ LOCAL_OVERRIDES_PACKAGES := Browser \
 							Jelly\
 							Etar \
 							AudioFX \
-							MatLog
+							MatLog \
+							BATestApp BTTestApp rfc l2test_ertm gatt_tool_qti_internal btsnoop
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
