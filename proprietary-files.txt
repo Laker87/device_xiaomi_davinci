@@ -387,7 +387,7 @@ vendor/lib64/libsdmextension.so|37b50b7865770f4f4ad9540b9fe2b73da554ecae
 vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
 # Display calibration - from davinci MIUI v12.0.5.0
-vendor/etc/qdcm_calib_data_ss_ea_fhd_cmd_dsi_panel.xml|4c8c166bba6ef7de86d7ab3c722dc7afc8e18a8d
+vendor/etc/qdcm_calib_data_ss_ea_fhd_cmd_dsi_panel.xml|2241dfeb86e68713b4d14122de30997c5b76c4f6
 vendor/etc/qdcm_calib_data_ss_eb_fhd_cmd_dsi_panel.xml|9592ec2725e2be9b43a13d7ba87ef2a10ba5e249
 
 # DPM
