@@ -583,4 +583,14 @@
         </interface>
         <fqname>@1.0::ITouchFeature/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.iop</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IIop/default</fqname>
+    </hal>
 </manifest>
