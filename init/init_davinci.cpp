@@ -28,6 +28,8 @@
  */
 
 #include <vector>
+#include <fstream>
+#include <cstdio>
 
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -53,6 +55,20 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_update(pi, value, strlen(value));
     else if (add)
         __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+bool has_eb_panel()
+{
+    std::ifstream cmdline("/proc/cmdline");
+    std::string line;
+    bool ret = false;
+
+    std::getline(cmdline, line);
+    if (line.find("dsi_ss_fhd_eb_f10_cmd_display") != std::string::npos)
+        ret = true;
+
+    cmdline.close();
+    return ret;
 }
 
 void set_ro_build_prop(const std::string &prop, const std::string &value) {
@@ -116,4 +132,5 @@ void vendor_load_properties() {
     }
 
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
+    property_override("persist.has.eb_panel", has_eb_panel() ? "true" : "false");
 }
