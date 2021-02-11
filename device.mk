@@ -301,6 +301,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-system \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayEB
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
