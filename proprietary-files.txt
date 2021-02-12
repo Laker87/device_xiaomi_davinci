@@ -1,10 +1,10 @@
 # ADSP
-vendor/bin/adsprpcd
+vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
+vendor/lib64/libadsprpc.so|7c31e4e2b94fa03f1e03c876fa583ad8f4a13a1d
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
