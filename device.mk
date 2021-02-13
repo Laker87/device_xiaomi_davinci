@@ -330,7 +330,8 @@ PRODUCT_COPY_FILES += \
 # Remove packages
 
 PRODUCT_PACKAGES += \
-    RemovePackages
+    RemovePackages \
+    RemoveUpdater
 
 # RCS
 PRODUCT_PACKAGES += \
