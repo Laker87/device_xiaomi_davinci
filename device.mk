@@ -166,7 +166,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
 
 # Gapps
+ifneq ($(VANILLA),true)
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+endif
 
 
 # GPS
