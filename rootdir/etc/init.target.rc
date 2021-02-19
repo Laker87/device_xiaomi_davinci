@@ -44,6 +44,10 @@ on init
     chmod 667 /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq
     chown system system /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
+    # ZRAM setup
+    write /sys/block/zram0/comp_algorithm lz4
+    write /proc/sys/vm/page-cluster 0
+
     # Add a cpuset for the camera daemon
     mkdir /dev/cpuset/camera-daemon
     write /dev/cpuset/camera-daemon/cpus 0-7
