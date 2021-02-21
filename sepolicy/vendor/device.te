@@ -1,0 +1,8 @@
+# Add qdsp_device type
+type qdsp_device, dev_type, mlstrustedobject;
+# Define the logging device type
+type diag_device, dev_type, mlstrustedobject;
+# Define IPA devices
+type ipa_dev, dev_type;
+
+type xdsp_device, dev_type;

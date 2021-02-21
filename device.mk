@@ -311,12 +311,15 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayEB
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock
+-include hardware/google/pixel/power-libperfmgr/aidl/device.mk
 
-# Product characteristics
-PRODUCT_CHARACTERISTICS := nosdcard
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Powerstats
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.mock
 
 # QTI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
@@ -383,7 +386,8 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+	hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \

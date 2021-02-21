@@ -38,3 +38,9 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.q
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup                                                                                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup        u:object_r:sysfs_wakeup:s0
+
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:sysfs_scsi_host:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/hibern8_on_idle_enable       u:object_r:sysfs_scsi_host:s0
+
+genfscon proc /sys/kernel/sched_energy_aware                                    u:object_r:proc_sched_energy_aware:s0
+genfscon debugfs /sched_features                                                u:object_r:debugfs_sched_features:s0
