@@ -58,7 +58,7 @@
 
     <!-- Thermal Profiles -->
     <string name="thermal_title">Profile termiczne</string>
-    <string name="thermal_summary">Dostosuj profile termiczne  dla aplikacji, aby uzyskać optymalną wydajność</string>
+    <string name="thermal_summary">Dostosuj profile termiczne dla aplikacji, aby uzyskać optymalną wydajność</string>
     <string name="thermal_default">Domyślny</string>
     <string name="thermal_benchmark">Testy wydajności</string>
     <string name="thermal_browser">Przeglądarka</string>
@@ -76,7 +76,7 @@
     <string name="touch_sensitivity_title">Czułość dotyku</string>
     <string name="touch_sensitivity_summary">Kontroluje czułość dotyku w przypadku wielokrotnych kliknięć</string>
     <string name="touch_resistant_title">Obszar poza dotykiem</string>
-    <string name="touch_resistant_summary">Zmniejsz czułość dotyku w pobliżu krawędzi, aby uniknąć sterowania dotykowego</string>
+    <string name="touch_resistant_summary">Zmniejsz czułość dotyku w pobliżu krawędzi, aby uniknąć przypadkowych dotknięć</string>
 
     <!-- Popup camera strings -->
     <string name="popup_camera_tip">Ostrzeżenie</string>
@@ -101,4 +101,10 @@
     <string name="reset_default_button_title">Przywróć konfigurację domyślną</string>
     <string name="reset_default_button_summary">Zresetuj wszystkie konfiguracje tego wyświetlacza</string>
     <string name="contrast_slider_title">Kontrast</string>
+
+	<!-- Vibration -->
+    <string name="vibration_control_title">Kontrola Wibracji</string>
+    <string name="vibration_control_summary">Dopasuj siłę wibracji</string>
+    <string name="vibration_reset">Wartość domyślna zostala ustawiona</string>
+    <string name="vibration_control_description">Dopasuj siłę wibracji przy dotknięciu, przychodzących połączeń i powiadomień.</string>
 </resources>
