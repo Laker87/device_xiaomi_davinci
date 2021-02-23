@@ -695,9 +695,6 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
-# Lights
--vendor/etc/vintf/manifest/android.hardware.lights-qti.xml
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/librice.so
