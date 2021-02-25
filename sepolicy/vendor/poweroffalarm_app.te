@@ -1,0 +1,5 @@
+type poweroffalarm_app, domain;
+app_domain(poweroffalarm_app);
+allow poweroffalarm_app app_api_service:service_manager find;
+allow poweroffalarm_app mnt_vendor_file:dir r_dir_perms;
+allow poweroffalarm_app cgroup:file rw_file_perms;
