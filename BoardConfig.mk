@@ -188,10 +188,6 @@ BOARD_SEPOLICY_DIRS := \
     hardware/google/pixel-sepolicy/flipendo \
     hardware/google/pixel-sepolicy/turbo_adapter
 
-# Telephony
-TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-PRODUCT_WANTS_QTI_SIM_SETTINGS := true
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
