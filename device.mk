@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
-    libvolumelistener
+    libvolumelistener \
+    libbatterylistener
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
