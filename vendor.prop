@@ -183,6 +183,8 @@ debug.stagefright.omx_default_rank=0
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.vendor.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_ltd_sys_ind=1
