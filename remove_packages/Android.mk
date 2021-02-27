@@ -12,7 +12,7 @@ LOCAL_OVERRIDES_PACKAGES := Browser \
 							BATestApp BTTestApp rfc l2test_ertm gatt_tool_qti_internal btsnoop
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := /dev/null
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 include $(BUILD_PREBUILT)
 
 ifeq ($(VANILLA),true)
@@ -23,6 +23,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := Updater
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := /dev/null
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 include $(BUILD_PREBUILT)
 endif
