@@ -483,6 +483,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal \
     libwpa_client \
     WifiOverlay \
     wpa_supplicant \
