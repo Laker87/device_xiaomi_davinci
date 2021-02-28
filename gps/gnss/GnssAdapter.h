@@ -146,6 +146,7 @@ typedef struct {
     TuncConfigInfo tuncConfigInfo;
     PaceConfigInfo paceConfigInfo;
     RobustLocationConfigInfo robustLocationConfigInfo;
+    LeverArmConfigInfo  leverArmConfigInfo;
 } LocIntegrationConfigInfo;
 
 using namespace loc_core;
@@ -164,13 +165,10 @@ typedef std::function<void(
 )> QDgnssSessionActiveCb;
 
 struct CdfwInterface {
-    void (*startDgnssApiService)();
-
+    void (*startDgnssApiService)(const MsgTask& msgTask);
     QDgnssListenerHDL (*createUsableReporter)(
             QDgnssSessionActiveCb sessionActiveCb);
-
     void (*destroyUsableReporter)(QDgnssListenerHDL handle);
-
     void (*reportUsable)(QDgnssListenerHDL handle, bool usable);
 };
 
@@ -268,8 +266,7 @@ class GnssAdapter : public LocAdapterBase {
     /*==== CONVERSION ===================================================================*/
     static void convertOptions(LocPosMode& out, const TrackingOptions& trackingOptions);
     static void convertLocation(Location& out, const UlpLocation& ulpLocation,
-                                const GpsLocationExtended& locationExtended,
-                                const LocPosTechMask techMask);
+                                const GpsLocationExtended& locationExtended);
     static void convertLocationInfo(GnssLocationInfoNotification& out,
                                     const GpsLocationExtended& locationExtended);
     static uint16_t getNumSvUsed(uint64_t svUsedIdsMask,
@@ -567,6 +564,8 @@ public:
     static void convertGnssSvIdMaskToList(
             uint64_t svIdMask, std::vector<GnssSvIdSource>& svIds,
             GnssSvId initialSvId, GnssSvType svType);
+    static void computeVRPBasedLla(const UlpLocation& loc, GpsLocationExtended& locExt,
+                                   const LeverArmConfigInfo& leverArmConfigInfo);
 
     void injectLocationCommand(double latitude, double longitude, float accuracy);
     void injectLocationExtCommand(const GnssLocationInfoNotification &locationInfo);
