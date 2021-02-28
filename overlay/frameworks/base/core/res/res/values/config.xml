@@ -652,4 +652,9 @@
 
     <!-- Set the default dialer package name. -->
     <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
+
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily">googlesans</string>
+    <string name="config_headlineFontFamilyMedium">googlesans-medium</string>
+    <string name="config_headlineFontFeatureSettings">ss03</string>
 </resources>
