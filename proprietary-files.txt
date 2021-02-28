@@ -701,6 +701,12 @@ vendor/lib64/libqtikeymaster4.so
 # Listen
 vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/librice.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libgcs-osal.so
+vendor/lib/liblistensoundmodel2.so
+vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.9.1.r1-07300-SMxxx0.0
 vendor/bin/vppservice|55039efdfcd2d837d76fff9b442470d10cffce89
