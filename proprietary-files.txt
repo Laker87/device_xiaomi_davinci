@@ -401,8 +401,10 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a999157
 vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|a4173f7af5a0a4ea09f89cc06ecb9374dec1653d
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|cca6f5f8bb798633d5a425876ed29155be06321f
 
-# Display
-vendor/lib64/libdisplayqos.so
+# Display - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/lib64/libdisp-aba.so|b7c8567c3079372479c85834ba1aab4e2eee5522
+vendor/lib64/libdisplayqos.so|13aa5350813e6b3b619ba26a4854e512302e2d97
+vendor/lib64/libtinyxml.so|1fc14ef18aa90ddf62e7ced53da91d1bc264e47b
 
 # Display - from LA.UM.9.1.r1-08300-SMxxx0.0
 vendor/lib64/libhdr_tm.so|e4638c3bf21685b84650c5858bafe384ab2118ff
