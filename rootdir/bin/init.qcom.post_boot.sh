@@ -110,7 +110,7 @@ case "$target" in
     echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
     echo 5000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
     echo 768000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-    echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
 
     # configure scaling min frequency for little cluster
     echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
@@ -122,12 +122,18 @@ case "$target" in
     echo 5000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
     echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
     echo 806400 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
-    echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+    echo 90 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
     # configure scaling min frequency for big cluster
     echo 300000 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
     # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
+    echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu1/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu2/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu3/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu4/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
 
