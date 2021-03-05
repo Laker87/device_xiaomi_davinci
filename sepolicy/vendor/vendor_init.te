@@ -3,6 +3,7 @@ set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_persist_camera_prop)
 set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_ssr_prop)
+get_prop(vendor_init, vendor_default_prop)
 
 allow vendor_init system_file:file read;
 
