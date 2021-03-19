@@ -663,9 +663,6 @@
          brightness value and will repeat for the following ramp if autobrightness is enabled. -->
     <bool name="config_skipScreenOnBrightnessRamp">true</bool>
 
-    <!-- If this is true, the screen will fade off. -->
-    <bool name="config_animateScreenLights">true</bool>
-
     <!-- Enable face auth only when swiping security view -->
     <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 
