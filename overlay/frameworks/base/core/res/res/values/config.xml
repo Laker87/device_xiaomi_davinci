@@ -668,4 +668,7 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
+
+    <!-- NightLight FOD -->
+    <bool name="disable_fod_night_light">true</bool>
 </resources>
