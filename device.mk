@@ -54,10 +54,16 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default
 
 PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libhdmiedid \
+    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndmonitor \
+    libspkrprot \
+    libvolumelistener \
+    libbatterylistener
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
