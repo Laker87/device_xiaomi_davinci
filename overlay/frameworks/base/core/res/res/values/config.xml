@@ -658,11 +658,6 @@
     <string name="config_headlineFontFamilyMedium">googlesans-medium</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
 
-    <!-- Whether or not to skip the initial brightness ramps when the display transitions to
-         STATE_ON. Setting this to true will skip the brightness ramp to the last stored active
-         brightness value and will repeat for the following ramp if autobrightness is enabled. -->
-    <bool name="config_skipScreenOnBrightnessRamp">true</bool>
-
     <!-- Enable face auth only when swiping security view -->
     <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 
