@@ -55,16 +55,10 @@ PRODUCT_PACKAGES += \
     audio_amplifier.sm6150
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndmonitor \
-    libspkrprot \
-    libvolumelistener \
-    libbatterylistener
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
