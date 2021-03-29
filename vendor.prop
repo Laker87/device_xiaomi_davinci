@@ -165,6 +165,10 @@ vendor.display.disable_rotator_downscale=1
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.qg_cld_coff_gain=1.5
