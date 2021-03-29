@@ -17,6 +17,9 @@ ro.charger.enable_suspend=true
 # Gboard
 ro.com.google.ime.kb_pad_port_b=1
 
+# Graphics
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
