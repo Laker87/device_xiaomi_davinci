@@ -70,6 +70,10 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/mono.cnt
 
+# Batterysecret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
