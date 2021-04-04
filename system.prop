@@ -1,3 +1,21 @@
+# ART
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=everything
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+dev.pm.dyn_samplingrate=1
+
 # Bluetooth
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.mac_whitelist=false
@@ -20,6 +38,19 @@ ro.com.google.ime.kb_pad_port_b=1
 # Graphics
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 
+# HWUI
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
@@ -29,8 +60,10 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
+qcom.hw.aac.encoder=true
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
@@ -57,6 +90,12 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+config.disable_rtt=true
+wifi.aware.interface=wifi-aware0
+
+# Wifi Display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
 
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
