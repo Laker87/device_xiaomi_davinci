@@ -232,10 +232,6 @@
         <item>450</item>  <!-- index 2 -->
     </array>
 
-    <!-- Minimum screen brightness setting allowed by power manager.
-         The user is forbidden from setting the brightness below this level.  -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
-
     <!-- Maximum screen brightness allowed by the power manager.
           The user is forbidden from setting the brightness above this level. -->
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item> 
@@ -247,7 +243,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">2</integer>
+<!--     <integer name="config_screenBrightnessDim">160</integer> -->
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
@@ -256,7 +252,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+<!--     <integer name="config_screenBrightnessSettingMinimum">160</integer> -->
 
     <!-- Maximum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
