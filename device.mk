@@ -326,7 +326,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayEB
 
 # Power
--include hardware/google/pixel/power-libperfmgr/aidl/device.mk
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # Powerhint
 PRODUCT_COPY_FILES += \
