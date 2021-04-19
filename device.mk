@@ -401,8 +401,9 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-	hardware/google/pixel
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
 
 # Service Tracker
 PRODUCT_PACKAGES += \
