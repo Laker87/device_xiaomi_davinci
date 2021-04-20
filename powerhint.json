@@ -264,15 +264,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "67",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "EnergyAware",
       "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
@@ -447,12 +438,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "67"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 2000,
       "Value": "0"
@@ -564,12 +549,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1000,
-      "Value": "67"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
@@ -764,12 +743,6 @@
       "Value": "9999999"
     },
     {
-      "PowerHint": "CAMERA_SHOT",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1000,
-      "Value": "67"
-    },
-    {
       "PowerHint": "LAUNCH",
       "Node": "UpMigrate",
       "Duration": 2000,
@@ -782,22 +755,10 @@
       "Value": "0x28"
     },
     {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "67"
-    },
-    {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
-    },
-    {
-      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 0,
-      "Value": "67"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -816,12 +777,6 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "0"
-    },
-    {
-      "PowerHint": "ML_ACC",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "67"
     },
     {
       "PowerHint": "Flipendo",
