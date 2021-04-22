@@ -36,3 +36,5 @@ vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
 
 # PowerHAL
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+
+ro.alarm_boot                      u:object_r:vendor_alarm_boot_prop:s0
