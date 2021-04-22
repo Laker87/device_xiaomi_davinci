@@ -97,6 +97,8 @@ on fs
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
 
+	mkdir /mnt/vendor/persist/alarm 0770 system system
+
 on late-fs
     # Start services for bootani
     start surfaceflinger
