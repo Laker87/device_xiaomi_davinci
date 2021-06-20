@@ -32,6 +32,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Charger
 ro.charger.enable_suspend=true
 
+# CNE
+persist.vendor.cne.feature=1
+
 # Gboard
 ro.com.google.ime.kb_pad_port_b=1
 
@@ -87,6 +90,10 @@ telephony.lteOnCdmaDevice=1
 
 # Recovery
 ro.recovery.ui.margin_height=48
+
+# Wfd
+persist.debug.wfd.enable=1
+persist.hwc.enable_vds=1
 
 # WiFi
 wifi.interface=wlan0
