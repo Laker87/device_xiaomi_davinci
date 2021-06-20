@@ -1011,6 +1011,10 @@ vendor/firmware/goodix_gt9886_limit_f10_second.tporder
 # Vibrator
 -vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
 
+# WiFi Display - from MIUI
+vendor/bin/wfdhdcphalservice|047b81f6902ec29606dc72443dc74b58e83153b2
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
+
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
