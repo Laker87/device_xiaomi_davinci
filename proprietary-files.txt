@@ -70,6 +70,10 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/mono.cnt
 
+# Battery
+vendor/bin/batteryd
+vendor/etc/init/init.batteryd.rc
+
 # Batterysecret
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
@@ -326,6 +330,9 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/bin/init.qti.chg_policy.sh
+vendor/etc/charger_fstab.qti
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE  - from LA.UM.9.1.r1-07300-SMxxx0.0
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|e71f1a060bc65eb373beb6d33158c0e2b37e2a70
