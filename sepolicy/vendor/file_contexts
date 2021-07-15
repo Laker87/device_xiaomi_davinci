@@ -19,12 +19,15 @@
 # FPS tile
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
 
+# FOD
+/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui                u:object_r:sysfs_fod:s0
+/sys/devices/virtual/touch/tp_dev/fod_status                         u:object_r:sysfs_fod:s0
+
 # HALs
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.davinci        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.davinci u:object_r:hal_lineage_fod_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.davinci    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service          u:object_r:hal_motor_default_exec:s0
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service   u:object_r:hal_touchfeature_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock     u:object_r:hal_power_stats_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power@1\.3-service\.pixel-libperfmgr  u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr       u:object_r:hal_power_default_exec:s0
@@ -41,9 +44,6 @@
 
 # WiFi
 /vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
-
-# Touchfeature
-/dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
 
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
