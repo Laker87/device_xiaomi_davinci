@@ -24,4 +24,6 @@
 
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">false</bool>
+    <!-- Battery Health -->
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
