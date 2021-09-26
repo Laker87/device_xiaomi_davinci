@@ -23,7 +23,7 @@
     <integer name="config_fingerprintSensorLocation">1</integer>
 
     <!-- Screen off FOD -->
-    <bool name="config_supportScreenOffFod">false</bool>
+    <bool name="config_supportScreenOffFod">true</bool>
     <!-- Battery Health -->
     <bool name="config_supportBatteryHealth">true</bool>
 </resources>
