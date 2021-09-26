@@ -699,7 +699,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|2b31566ea099a9783e2d2298e979a88aaa7
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|a19b5e243f5a4cd02a53f6155237bf24c64ac950
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|b786d90692f0c8364642ef5040d05f96b24fdfbf
-system_ext/framework/qti-telephony-common.jar|0d3da7628506d66852de19f296a05f728710c4e3
+system_ext/framework/qti-telephony-common.jar|a22ed88e0cd81ea8c4788c26494c8b5fd666ec7c
 -system_ext/priv-app/ims/ims.apk|f808ce7dc49d558369013dc25de19c749f17e2e6
 
 # IPA
