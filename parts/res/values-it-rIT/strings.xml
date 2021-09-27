@@ -88,4 +88,7 @@
     <string name="dc_dimming_node">/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable</string>
 
 
+    <!-- Doze brightness -->
+    <string name="doze_brightness_title">Luminosità Doze</string>
+    <string name="doze_brightness_summary">Modalità %s abilitata</string>
 </resources>
